@@ -1,0 +1,353 @@
+Absolutely. Here's a **Cursor AI master prompt** that explicitly requires the website to be built **only with HTML, CSS, JavaScript, and Bootstrap 5**, with no React, Next.js, or other frameworks.
+
+---
+
+# 🚀 MASTER PROMPT – Build the Stark Technovations Website (HTML, CSS, JavaScript & Bootstrap Only)
+
+You are a world-class Senior Frontend Engineer, UI/UX Designer, Bootstrap Expert, and Enterprise Web Architect.
+
+## 🎯 Mission
+
+Design and develop a **premium, futuristic, enterprise-grade website** for **Stark Technovations**.
+
+The website must be built **from scratch** using **ONLY** the following technologies:
+
+* ✅ HTML5
+* ✅ CSS3
+* ✅ Vanilla JavaScript (ES6+)
+* ✅ Bootstrap 5
+* ✅ Bootstrap Icons (or Font Awesome for icons)
+
+### ❌ DO NOT USE
+
+* React
+* Next.js
+* Vue.js
+* Angular
+* Svelte
+* Tailwind CSS
+* TypeScript
+* Node.js frontend frameworks
+* jQuery
+* Any SPA framework
+* Any build tools that require compilation
+
+The website must run by simply opening `index.html` in a browser or serving it from any standard web server.
+
+---
+
+# 🏢 Company Information
+
+## Company Name
+
+**Stark Technovations**
+
+## Business Type
+
+ICT Solutions & Electronic Security Systems Provider
+
+## Services
+
+Create professional sections for:
+
+* Software Development
+* Website Design & Development
+* Mobile App Development
+* Point of Sale (POS) Systems
+* CCTV Installation
+* Access Control Systems
+* Biometric Attendance Systems
+* Electric Fence Systems
+* Alarm Systems
+* IT Support & Maintenance
+* Network Design & Installation
+* Structured Cabling
+* Wi-Fi Solutions
+* Cybersecurity Services
+* Cloud Solutions
+* Server Installation & Management
+* Computer Sales & Repairs
+* Printer Support & Maintenance
+* IT Consultancy
+* Managed IT Services
+
+---
+
+# 🎨 Design Style
+
+The website should look like a premium global technology brand.
+
+The visual style should be:
+
+* Modern
+* Elegant
+* Professional
+* Futuristic
+* Clean
+* Responsive
+* High-end
+* Enterprise-grade
+
+Incorporate:
+
+* Smooth scrolling
+* Glassmorphism where appropriate
+* Soft shadows
+* Subtle gradients
+* Micro-interactions
+* Card hover animations
+* Scroll reveal animations
+* Sticky navigation
+* Animated counters
+* Interactive service cards
+* Elegant buttons
+* Premium typography
+
+Do **not** clutter the interface.
+
+---
+
+# 🎨 Color Scheme
+
+Use a technology-inspired palette:
+
+* Deep Navy
+* Royal Blue
+* White
+* Charcoal
+* Electric Blue accents
+* Silver/Gray highlights
+
+Maintain strong accessibility and readability.
+
+---
+
+# 📄 Required Pages
+
+Generate:
+
+* `index.html`
+* `about.html`
+* `services.html`
+* `projects.html`
+* `contact.html`
+
+---
+
+# 🧩 Homepage Sections
+
+## 1. Hero Section
+
+Include:
+
+* Large headline
+* Supporting text
+* “Get a Quote” button
+* “Our Services” button
+* Animated background
+* Smooth entrance animations
+
+---
+
+## 2. About Stark Technovations
+
+Explain the company’s commitment to innovation, reliability, and customer-focused ICT and security solutions.
+
+---
+
+## 3. Services
+
+Display all services in attractive Bootstrap cards with icons, hover effects, and concise descriptions.
+
+---
+
+## 4. Why Choose Us
+
+Highlight:
+
+* Experienced professionals
+* Innovative solutions
+* Fast support
+* Quality workmanship
+* Secure systems
+* Customer satisfaction
+* Scalable technology
+* Reliable maintenance
+
+---
+
+## 5. Featured Projects
+
+Create a portfolio/gallery section with responsive cards and category filtering using Vanilla JavaScript.
+
+---
+
+## 6. Industries Served
+
+Include:
+
+* Education
+* Healthcare
+* Government
+* Retail
+* Financial Services
+* Hospitality
+* Manufacturing
+* Residential
+* Corporate Offices
+* SMEs
+
+---
+
+## 7. Statistics
+
+Animated counters for:
+
+* Projects Completed
+* Happy Clients
+* Systems Installed
+* Support Tickets Resolved
+* Years of Experience
+
+---
+
+## 8. Testimonials
+
+Professional testimonial cards with subtle animations.
+
+---
+
+## 9. Contact Section
+
+Include:
+
+* Contact form
+* Phone number
+* Email
+* Office address
+* Google Maps placeholder
+* Business hours
+
+Use client-side validation with Vanilla JavaScript.
+
+---
+
+## 10. Footer
+
+Include:
+
+* Company logo
+* Navigation links
+* Services
+* Contact details
+* Copyright
+* Privacy Policy
+* Terms of Service
+* Social media icons
+
+---
+
+# ✨ Animations
+
+Implement smooth and performant animations using only CSS and Vanilla JavaScript.
+
+Include:
+
+* Fade-in effects
+* Slide-in effects
+* Hover transitions
+* Button animations
+* Scroll reveal
+* Animated counters
+* Smooth scrolling
+* Sticky header transitions
+* Card elevation effects
+
+Keep animations tasteful and professional.
+
+---
+
+# 📱 Responsiveness
+
+The website must be fully responsive and optimized for:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Use Bootstrap’s responsive grid and utility classes.
+
+---
+
+# 🧠 JavaScript Features
+
+Implement with **Vanilla JavaScript only**:
+
+* Mobile menu toggle
+* Sticky navigation
+* Scroll-to-top button
+* Active navigation highlighting
+* Smooth scrolling
+* Animated counters
+* Scroll-triggered animations
+* Portfolio filtering
+* Contact form validation
+* FAQ accordion (if included)
+
+---
+
+# 📂 File Structure
+
+```
+stark-technovations/
+│
+├── index.html
+├── about.html
+├── services.html
+├── projects.html
+├── contact.html
+│
+├── css/
+│   ├── style.css
+│   ├── responsive.css
+│   └── animations.css
+│
+├── js/
+│   ├── main.js
+│   ├── navbar.js
+│   ├── forms.js
+│   └── animations.js
+│
+├── images/
+│   ├── logo.png
+│   ├── hero/
+│   ├── services/
+│   ├── projects/
+│   └── team/
+│
+└── assets/
+```
+
+---
+
+# ⚡ Performance & Code Quality
+
+* Use semantic HTML5 elements.
+* Keep CSS modular and well-commented.
+* Write clean, maintainable JavaScript without external dependencies.
+* Optimize for SEO and accessibility.
+* Ensure fast page loads and cross-browser compatibility.
+
+---
+
+# ✅ Success Criteria
+
+The final website should:
+
+* Be built **100% with HTML, CSS, Vanilla JavaScript, and Bootstrap 5**.
+* Require **no compilation or build step**.
+* Be visually impressive and enterprise-grade.
+* Be fully responsive and accessible.
+* Showcase Stark Technovations as a trusted ICT and electronic security solutions provider.
+* Be production-ready and easy to deploy on GitHub Pages, Netlify, Apache, Nginx, or any standard web server.

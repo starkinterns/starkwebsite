@@ -1,0 +1,32 @@
+/* ================================================================
+   STARK TECHNOVATIONS – Responsive Styles
+   ================================================================ */
+
+@media(max-width:991.98px){
+  .nav-links-desk,.nav-cta-desk{display:none !important}
+  .nav-tog{display:flex !important}
+  .hero-btns{justify-content:center}
+  .hero-desc,.hero-title{text-align:center}
+  .hero-trust{justify-content:center}
+  .hero-badge{display:inline-flex}
+  .page-hero{padding:8rem 0 4rem}
+}
+
+@media(max-width:767.98px){
+  section{padding:4rem 0}
+  #home{padding-top:7.5rem}
+  .about-stats-float{flex-wrap:wrap}
+  .astat{min-width:calc(50% - .5rem)}
+  .t-card{padding:2rem 1.5rem}
+  .c-form-wrap{padding:1.5rem}
+  .filter-pills{justify-content:center;width:100%}
+  .f-bottom{flex-direction:column;text-align:center}
+  .f-legal{justify-content:center}
+  .page-hero h1{font-size:1.85rem}
+}
+
+@media(max-width:575.98px){
+  .hero-title{font-size:2rem}
+  .stat-num{font-size:2.2rem}
+  .hero-trust{gap:.85rem;font-size:.65rem}
+}

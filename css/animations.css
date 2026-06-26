@@ -1,0 +1,46 @@
+/* ================================================================
+   STARK TECHNOVATIONS – Animations
+   ================================================================ */
+
+@keyframes nodeFloat{
+  0%,100%{transform:translateY(0) scale(1)}
+  50%{transform:translateY(-15px) scale(1.2)}
+}
+@keyframes dotPulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.4;transform:scale(1.5)}
+}
+
+/* Scroll reveal (AOS) */
+[data-aos]{
+  opacity:0;
+  transition-property:opacity,transform;
+  transition-timing-function:var(--ease);
+  transition-duration:.65s;
+}
+[data-aos="fade-up"]{transform:translateY(28px)}
+[data-aos="fade-left"]{transform:translateX(36px)}
+[data-aos="fade-right"]{transform:translateX(-36px)}
+[data-aos="zoom-in"]{transform:scale(.9)}
+[data-aos].in{opacity:1;transform:none}
+[data-aos-delay="100"]{transition-delay:100ms}
+[data-aos-delay="150"]{transition-delay:150ms}
+[data-aos-delay="200"]{transition-delay:200ms}
+[data-aos-delay="250"]{transition-delay:250ms}
+[data-aos-delay="300"]{transition-delay:300ms}
+[data-aos-delay="400"]{transition-delay:400ms}
+[data-aos-delay="500"]{transition-delay:500ms}
+
+/* Button pulse on hover */
+.btn-primary:active{transform:scale(.97)}
+
+/* Reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+  html{scroll-behavior:auto}
+  [data-aos]{opacity:1;transform:none}
+}
