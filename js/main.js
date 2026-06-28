@@ -11,8 +11,8 @@
     const splash = document.getElementById('splash');
     if (!splash) return;
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const hideDelay = reduce ? 400 : 3000; // 3s for normal motion
-    const removeDelay = hideDelay + 800;
+    const hideDelay = reduce ? 400 : 2000; // 2s for normal motion
+    const removeDelay = hideDelay + 600;
     setTimeout(() => splash.classList.add('hide'), hideDelay);
     setTimeout(() => {
       if (splash && splash.parentNode) splash.parentNode.removeChild(splash);
