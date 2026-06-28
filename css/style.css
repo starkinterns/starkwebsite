@@ -82,7 +82,8 @@ body::before{
 #mainNav.scrolled{
   padding:.6rem 0;
   background:rgba(6,13,26,.92);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  backdrop-filter:blur(20px);
   border-bottom:1px solid var(--border);
   box-shadow:0 4px 32px rgba(0,0,0,.5);
 }
@@ -133,7 +134,7 @@ img[src$="logo.PNG"],
 /* Mobile Drawer */
 #mobMenu{
   display:none;position:fixed;inset:0;z-index:999;
-  background:rgba(6,13,26,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  background:rgba(6,13,26,.97);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);
   flex-direction:column;padding:5.5rem 2rem 3rem;
 }
 #mobMenu.open{display:flex}
@@ -204,7 +205,7 @@ section{padding:6rem 0;position:relative}
   background:var(--card-bg);
   border:1px solid var(--border-2);
   border-radius:var(--radius-lg);
-  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
   transition:border-color .35s var(--ease),background .35s,transform .3s var(--ease-spring),box-shadow .3s;
   overflow:hidden;position:relative;
 }
@@ -735,18 +736,26 @@ footer{background:#040a12;padding:5rem 0 2.5rem;border-top:1px solid rgba(255,25
    INNER PAGE HERO
    ================================================================ */
 .page-hero{
-  padding:9rem 0 5rem;position:relative;overflow:hidden;
-  background:linear-gradient(180deg,var(--navy-2) 0%,var(--navy) 100%);
+  padding:9rem 0 5rem;position:relative;overflow:hidden;isolation:isolate;
+  background:
+    linear-gradient(135deg,rgba(6,13,26,.88) 0%,rgba(10,22,40,.78) 50%,rgba(6,13,26,.9) 100%),
+    url("../images/hero/intrusion-alarm.jpg") center/cover no-repeat;
 }
 .page-hero::before{
-  content:'';position:absolute;inset:0;
+  content:'';position:absolute;inset:0;z-index:-1;
   background-image:
     linear-gradient(rgba(45,127,255,.05) 1px,transparent 1px),
     linear-gradient(90deg,rgba(45,127,255,.05) 1px,transparent 1px);
   background-size:48px 48px;
-  mask-image:linear-gradient(to bottom,black 40%,transparent 100%);
   -webkit-mask-image:linear-gradient(to bottom,black 40%,transparent 100%);
+  mask-image:linear-gradient(to bottom,black 40%,transparent 100%);
 }
+.page-hero::after{
+  content:'';position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(circle at top right,rgba(45,127,255,.16),transparent 40%);
+  pointer-events:none;
+}
+.page-hero .container{position:relative;z-index:2}
 .page-hero .breadcrumb{
   display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;
   font-size:.78rem;color:var(--silver);margin-bottom:1rem;
@@ -755,6 +764,17 @@ footer{background:#040a12;padding:5rem 0 2.5rem;border-top:1px solid rgba(255,25
 .page-hero .breadcrumb a:hover{color:#fff}
 .page-hero h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:1rem}
 .page-hero p{font-size:1rem;color:var(--silver);max-width:36rem;line-height:1.75}
+.page-hero-inner{z-index:2}
+.page-hero-accent{
+  background:linear-gradient(135deg,var(--electric),var(--electric-2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:transparent;
+}
+.page-hero-media{
+  border-radius:1.1rem;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.5);
+  border:1px solid rgba(255,255,255,.08);
+}
+.page-hero-media img{width:100%;height:260px;object-fit:cover;display:block}
+.hero-content-shell{z-index:2}
 
 /* FAQ Accordion */
 .faq-item{
